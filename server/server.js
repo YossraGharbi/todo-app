@@ -11,6 +11,8 @@ app.use(bodyParser.json());
 
 //When we create a resource, we use a POST http method
 app.post('/todos', (req, res) => {
+    //console.log(req.body);
+    
     var todo = new Todo({
         text: req.body.text
     });
